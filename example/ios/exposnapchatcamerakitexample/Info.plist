@@ -46,6 +46,12 @@
         </dict>
       </dict>
     </dict>
+    <key>SCCameraKitAPIToken</key>
+    <string>eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNjc3NzQxNTgyLCJzdWIiOiJhM2NhNTM2Ni04YTFmLTQ0NmUtYjZkYy0wMGM3NWM5MjJiMGV-U1RBR0lOR35hYzkzNDRhNi02MjM4LTRlYmQtODBlOC0xZGU5NmFhNDJmYTgifQ.-O30gfF5vwLznNCXZSW8BCkeQNc1zLh-AXYhM_2l6sY</string>
+    <key>SCCameraKitClientID</key>
+    <string>a3ca5366-8a1f-446e-b6dc-00c75c922b0e</string>
+    <key>SCCameraKitLensGroupID</key>
+    <string>d9b3ad6c-c28b-45b7-8577-4475fa32823f</string>
     <key>UILaunchStoryboardName</key>
     <string>SplashScreen</string>
     <key>UIRequiredDeviceCapabilities</key>

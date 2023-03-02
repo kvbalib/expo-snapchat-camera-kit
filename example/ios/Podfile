@@ -47,6 +47,10 @@ target 'exposnapchatcamerakitexample' do
   # Flags change depending on the env values.
   flags = get_default_flags()
 
+# @generated begin withSnapchatApp - expo prebuild (DO NOT MODIFY) sync-a3b324e75321ec5819044b6468401edb9e255c6b
+  pod 'SCSDKCameraKit'
+  pod 'SCSDKCameraKitReferenceUI'
+# @generated end withSnapchatApp
   use_react_native!(
     :path => config[:reactNativePath],
     :hermes_enabled => podfile_properties['expo.jsEngine'] == nil || podfile_properties['expo.jsEngine'] == 'hermes',

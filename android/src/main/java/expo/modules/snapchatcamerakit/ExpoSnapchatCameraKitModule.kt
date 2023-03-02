@@ -22,8 +22,22 @@ class ExpoSnapchatCameraKitModule : Module() {
     Events("onChange")
 
     // Defines a JavaScript synchronous function that runs the native code on the JavaScript thread.
-    Function("hello") {
-      "Hello world! 👋"
+    Function("getSnapchatApiToken") {
+      val applicationInfo = appContext?.reactContext?.packageManager?.getApplicationInfo(appContext?.reactContext?.packageName.toString(), PackageManager.GET_META_DATA)
+
+      return@Function applicationInfo?.metaData?.getString("SCCameraKitAPIToken")
+    }
+
+    Function("getSnapchatKitAppID") {
+      val applicationInfo = appContext?.reactContext?.packageManager?.getApplicationInfo(appContext?.reactContext?.packageName.toString(), PackageManager.GET_META_DATA)
+
+      return@Function applicationInfo?.metaData?.getString("SCCameraKitClientID")
+    }
+
+    Function("getSnapchatLensGroupID") {
+      val applicationInfo = appContext?.reactContext?.packageManager?.getApplicationInfo(appContext?.reactContext?.packageName.toString(), PackageManager.GET_META_DATA)
+
+      return@Function applicationInfo?.metaData?.getString("SCCameraKitLensGroupID")
     }
 
     // Defines a JavaScript function that always returns a Promise and whose native code

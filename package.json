@@ -1,11 +1,12 @@
 {
   "name": "expo-snapchat-camera-kit",
   "version": "0.1.0",
-  "description": "Snapchat Camera Kit integration for Expo managed app.",
+  "description": "Snapchat Camera Kit integration for Expo managed apps.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
     "build": "expo-module build",
+    "build:plugin": "npm run build plugin",
     "clean": "expo-module clean",
     "lint": "expo-module lint",
     "test": "expo-module test",
