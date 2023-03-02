@@ -75,31 +75,19 @@ const withSnapchatApp: ConfigPlugin<ISnapchatConfig> = (
 
     AndroidConfig.Manifest.addMetaDataItemToMainApplication(
       mainApplication,
-      "SCCameraKitClientID",
+      "com.snap.camerakit.app.id",
       snapchatKitAppID
     );
     AndroidConfig.Manifest.addMetaDataItemToMainApplication(
       mainApplication,
-      "SCCameraKitAPIToken",
+      "com.snap.camerakit.api.token",
       snapchatApiToken
     );
     AndroidConfig.Manifest.addMetaDataItemToMainApplication(
       mainApplication,
-      "SCCameraKitLensGroupID",
+      "com.snap.camerakit.lens.group",
       snapchatLensGroupID
     );
-
-    // if (config.modResults.manifest.application) {
-    //   const activities = config.modResults.manifest.application[0].activity;
-    //   const queueItActivity = {
-    //     $: { "android:name": "com.snap.camerakit:support-camera-activity" },
-    //   };
-    //
-    //   config.modResults.manifest.application[0].activity = [
-    //     ...activities!,
-    //     queueItActivity,
-    //   ];
-    // }
 
     return config;
   });
