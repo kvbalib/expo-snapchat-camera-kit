@@ -16,6 +16,8 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.dependency 'ExpoModulesCore'
+  s.dependency 'SCSDKCameraKit'
+  s.dependency 'SCSDKCameraKitReferenceSwiftUI'
 
   # Swift/Objective-C compatibility
   s.pod_target_xcconfig = {

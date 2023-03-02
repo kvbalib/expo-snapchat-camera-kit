@@ -19,8 +19,17 @@ public class ExpoSnapchatCameraKitModule: Module {
     Events("onChange")
 
     // Defines a JavaScript synchronous function that runs the native code on the JavaScript thread.
-    Function("hello") {
-      return "Hello world! 👋"
+
+    Function("getSnapchatApiToken") {
+      return Bundle.main.object(forInfoDictionaryKey: "SCCameraKitAPIToken") as? String
+    }
+
+    Function("getSnapchatKitAppID") {
+      return Bundle.main.object(forInfoDictionaryKey: "SCCameraKitClientID") as? String
+    }
+
+    Function("getSnapchatLensGroupID") {
+      return Bundle.main.object(forInfoDictionaryKey: "SCCameraKitLensGroupID") as? String
     }
 
     // Defines a JavaScript function that always returns a Promise and whose native code
