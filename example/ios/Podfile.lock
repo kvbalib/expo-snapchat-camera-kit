@@ -19,6 +19,11 @@ PODS:
     - ReactCommon/turbomodule/core
   - ExpoSnapchatCameraKit (0.1.0):
     - ExpoModulesCore
+    - SCSDKCameraKit
+    - SCSDKCameraKitReferenceSwiftUI
+  - EXSplashScreen (0.18.1):
+    - ExpoModulesCore
+    - React-Core
   - FBLazyVector (0.71.3)
   - FBReactNativeSpec (0.71.3):
     - RCT-Folly (= 2021.07.22.00)
@@ -368,6 +373,11 @@ PODS:
     - React-jsi (= 0.71.3)
     - React-logger (= 0.71.3)
     - React-perflogger (= 0.71.3)
+  - SCSDKCameraKit (1.20.0)
+  - SCSDKCameraKitReferenceSwiftUI (1.20.0):
+    - SCSDKCameraKitReferenceUI (~> 1.20.0)
+  - SCSDKCameraKitReferenceUI (1.20.0):
+    - SCSDKCameraKit (~> 1.20.0)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -381,6 +391,7 @@ DEPENDENCIES:
   - ExpoKeepAwake (from `../node_modules/expo-keep-awake/ios`)
   - ExpoModulesCore (from `../node_modules/expo-modules-core`)
   - ExpoSnapchatCameraKit (from `../../ios`)
+  - EXSplashScreen (from `../node_modules/expo-splash-screen/ios`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
@@ -414,12 +425,17 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - SCSDKCameraKit
+  - SCSDKCameraKitReferenceUI
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
     - fmt
     - libevent
+    - SCSDKCameraKit
+    - SCSDKCameraKitReferenceSwiftUI
+    - SCSDKCameraKitReferenceUI
 
 EXTERNAL SOURCES:
   boost:
@@ -442,6 +458,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-modules-core"
   ExpoSnapchatCameraKit:
     :path: "../../ios"
+  EXSplashScreen:
+    :path: "../node_modules/expo-splash-screen/ios"
   FBLazyVector:
     :path: "../node_modules/react-native/Libraries/FBLazyVector"
   FBReactNativeSpec:
@@ -517,7 +535,8 @@ SPEC CHECKSUMS:
   Expo: aae5eb5ed076ff163eb909a003b2be1b85f832dd
   ExpoKeepAwake: 69f5f627670d62318410392d03e0b5db0f85759a
   ExpoModulesCore: f11d8a16e8d3f26c183da2541d75edc6aa9cf8eb
-  ExpoSnapchatCameraKit: 58fb689e83a13ddf8051f57de8162bd130d43ac3
+  ExpoSnapchatCameraKit: 672e14c8c2722e9f409bb616693c80df0e1bc72c
+  EXSplashScreen: cd7fb052dff5ba8311d5c2455ecbebffe1b7a8ca
   FBLazyVector: 60195509584153283780abdac5569feffb8f08cc
   FBReactNativeSpec: 9c191fb58d06dc05ab5559a5505fc32139e9e4a2
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
@@ -551,8 +570,11 @@ SPEC CHECKSUMS:
   React-RCTVibration: 5199a180d04873366a83855de55ac33ce60fe4d5
   React-runtimeexecutor: 7bf0dafc7b727d93c8cb94eb00a9d3753c446c3e
   ReactCommon: 6f65ea5b7d84deb9e386f670dd11ce499ded7b40
+  SCSDKCameraKit: 0d0f0825ca85ac047c32f0ba8a1a4c4ec8845d57
+  SCSDKCameraKitReferenceSwiftUI: 33d015d477e54d8aab6c8913cf12b3bc9c5a3c12
+  SCSDKCameraKitReferenceUI: 197eea72912b341973d387402188700b96149f84
   Yoga: 5ed1699acbba8863755998a4245daa200ff3817b
 
-PODFILE CHECKSUM: bb2134f4d94a5cff95a10459f151835db5bc5ac6
+PODFILE CHECKSUM: b38da1f40993edbff09e30feae44516764d91c96
 
 COCOAPODS: 1.11.3

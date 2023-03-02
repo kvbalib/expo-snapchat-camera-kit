@@ -12,6 +12,9 @@
     </intent>
   </queries>
   <application android:name=".MainApplication" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" android:allowBackup="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+    <meta-data android:name="SCCameraKitAPIToken" android:value="eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNjc3NzQxNTgyLCJzdWIiOiJhM2NhNTM2Ni04YTFmLTQ0NmUtYjZkYy0wMGM3NWM5MjJiMGV-U1RBR0lOR35hYzkzNDRhNi02MjM4LTRlYmQtODBlOC0xZGU5NmFhNDJmYTgifQ.-O30gfF5vwLznNCXZSW8BCkeQNc1zLh-AXYhM_2l6sY"/>
+    <meta-data android:name="SCCameraKitClientID" android:value="a3ca5366-8a1f-446e-b6dc-00c75c922b0e"/>
+    <meta-data android:name="SCCameraKitLensGroupID" android:value="d9b3ad6c-c28b-45b7-8577-4475fa32823f"/>
     <meta-data android:name="expo.modules.updates.ENABLED" android:value="true"/>
     <meta-data android:name="expo.modules.updates.EXPO_SDK_VERSION" android:value="48.0.0"/>
     <meta-data android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH" android:value="ALWAYS"/>
