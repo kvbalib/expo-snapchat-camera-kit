@@ -29,15 +29,20 @@ Add config plugin to your app.json file.
 {
   "expo": {
     ...
-    "plugins": ["expo-snapchat-camera-kit"]
+    "plugins": ["expo-snapchat-camera-kit",
+      {
+        "snapchatKitAppID": "<SNAPCHAT_KIT_APP_ID>",
+        "snapchatApiToken":  "<SNAPCHAT_API_TOKEN>",
+        "snapchatLensGroupID": "<SNAPCHAT_LENS_GROUP_ID>",
+        "cameraKitVersion": "<CAMERA_KIT_VERSION>"
+      }
+    ]
   }
 }
 ```
+Run `npx expo prebuild --clean` after installing the npm package and adding config plugin.
 
 ### Configure for iOS
-
-Run `npx pod-install` after installing the npm package.
-
 
 ### Configure for Android
 
