@@ -25,19 +25,19 @@ class ExpoSnapchatCameraKitModule : Module() {
     Function("getSnapchatApiToken") {
       val applicationInfo = appContext?.reactContext?.packageManager?.getApplicationInfo(appContext?.reactContext?.packageName.toString(), PackageManager.GET_META_DATA)
 
-      return@Function applicationInfo?.metaData?.getString("SCCameraKitAPIToken")
+      return@Function applicationInfo?.metaData?.getString("com.snap.camerakit.api.token")
     }
 
     Function("getSnapchatKitAppID") {
       val applicationInfo = appContext?.reactContext?.packageManager?.getApplicationInfo(appContext?.reactContext?.packageName.toString(), PackageManager.GET_META_DATA)
 
-      return@Function applicationInfo?.metaData?.getString("SCCameraKitClientID")
+      return@Function applicationInfo?.metaData?.getString("com.snap.camerakit.app.id")
     }
 
     Function("getSnapchatLensGroupID") {
       val applicationInfo = appContext?.reactContext?.packageManager?.getApplicationInfo(appContext?.reactContext?.packageName.toString(), PackageManager.GET_META_DATA)
 
-      return@Function applicationInfo?.metaData?.getString("SCCameraKitLensGroupID")
+      return@Function applicationInfo?.metaData?.getString("com.snap.camerakit.lens.group")
     }
 
     // Defines a JavaScript function that always returns a Promise and whose native code
