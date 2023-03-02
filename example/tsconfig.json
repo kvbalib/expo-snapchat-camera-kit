@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-snapchat-camera-kit": ["../src/index"],
+      "expo-snapchat-camera-kit/*": ["../src/*"]
+    }
+  }
+}
