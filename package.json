@@ -23,9 +23,6 @@
     "ExpoSnapchatCameraKit"
   ],
   "repository": "https://github.com/kvbalib/expo-snapchat-camera-kit.git",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "bugs": {
     "url": "https://github.com/kvbalib/expo-snapchat-camera-kit/issues"
   },
