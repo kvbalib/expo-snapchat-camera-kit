@@ -1,6 +1,6 @@
 {
   "name": "expo-snapchat-camera-kit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Snapchat Camera Kit integration for Expo managed apps.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -22,7 +22,10 @@
     "expo-snapchat-camera-kit",
     "ExpoSnapchatCameraKit"
   ],
-  "repository": "https://github.com/kvbalib/expo-snapchat-camera-kit",
+  "repository": "https://github.com/kvbalib/expo-snapchat-camera-kit.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "bugs": {
     "url": "https://github.com/kvbalib/expo-snapchat-camera-kit/issues"
   },
