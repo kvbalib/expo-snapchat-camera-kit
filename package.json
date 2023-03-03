@@ -8,7 +8,7 @@
     "build": "expo-module build",
     "build:plugin": "npm run build plugin",
     "clean": "expo-module clean",
-    "lint": "expo-module lint",
+    "lint": "expo-module lint --fix",
     "test": "expo-module test",
     "prepare": "expo-module prepare",
     "prepublishOnly": "expo-module prepublishOnly",

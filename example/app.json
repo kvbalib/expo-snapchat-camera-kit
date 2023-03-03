@@ -32,9 +32,8 @@
       ["../app.plugin.js",
         {
           "snapchatKitAppID": "<SNAPCHAT_KIT_APP_ID>",
-          "snapchatApiToken":  "<SNAPCHAT_API_TOKEN>",
-          "snapchatLensGroupID": "<SNAPCHAT_LENS_GROUP_ID>",
-          "cameraKitVersion": "<CAMERA_KIT_VERSION>"
+          "snapchatApiToken": "<SNAPCHAT_API_TOKEN>",
+          "snapchatLensGroupID": "<SNAPCHAT_LENS_GROUP_ID>"
         }
       ]
     ]
